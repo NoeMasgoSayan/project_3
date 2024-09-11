@@ -1,0 +1,200 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #d7f442; /* Verde claro original */
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Encabezado */
+header {
+  background-color: #4caf50; /* Verde oscuro original */
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo - Añadimos rotación continua al pasar el cursor */
+header .logo {
+  width: 500px;
+  height: auto;
+  transition: transform 0.6s ease-in-out; /* Transición suave */
+}
+
+header .logo:hover {
+  transform: rotate(360deg); /* Gira 360 grados */
+}
+
+/* Navegación */
+nav {
+  background-color: #90ee90; /* Verde claro original */
+  text-align: center;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+  margin: 0 20px;
+  color: #000; /* Color negro original */
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #fff; /* Blanco al hacer hover */
+  transform: translateY(-5px);
+}
+
+/* Sección principal */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Barra lateral */
+aside {
+  flex: 1;
+  min-width: 280px;
+  background-color: #8b4513; /* Marrón claro original */
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #ffeb3b; /* Amarillo vibrante */
+}
+
+aside .news-item {
+  margin-bottom: 20px;
+}
+
+aside .news-item img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+aside .news-item img:hover {
+  transform: scale(1.05); /* Aumento suave en imágenes */
+}
+
+aside .news-item p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Sección de contenido principal */
+section {
+  flex: 2;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+section .intro {
+  background-color: #d7f442; /* Verde claro original */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section .intro h2 {
+  font-size: 28px;
+  color: #00796b; /* Verde más oscuro */
+  margin-bottom: 15px;
+}
+
+section .intro p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Estilos del iframe de YouTube */
+section iframe {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Pie de página */
+footer {
+  background-color: #4caf50; /* Verde oscuro original */
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+  margin-top: 40px;
+}
+
+footer img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+footer .download-buttons {
+  margin: 20px 0;
+}
+
+footer .download-buttons a {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #00796b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+footer .download-buttons a:hover {
+  background-color: #ffeb3b;
+  color: #333;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  font-size: 20px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: #ffeb3b;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+}
