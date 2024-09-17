@@ -1,7 +1,25 @@
 function getPlantas() {
+
+  // Conseguimos el nombre de las plantas
   $.get(`https://pvz-2-api.vercel.app/api/plants/`, function (plantasData) {
+
+    //! Crear un array con todoas las plantas y su info
+    let plantasInfo = [];
+    //let familias = new Set();
+    console.log(plantasInfo);  // Set: evita familias duplicadas
+
+    // Conseguimos información de cada planta
     for (let planta of plantasData) {
       $.get(`https://pvz-2-api.vercel.app/api/plants/${planta}`, function (data) {
+
+        // Añadimos la info de cada planta a plantasInfo
+        plantasInfo.push(data);
+
+        
+
+
+
+
         const infoPlantas = `
         <div class="plant-info">
           <img src="https://pvz-2-api.vercel.app${data.image}" alt="${data.name}">
@@ -17,7 +35,9 @@ function getPlantas() {
           ${data.description ? `<p class="description"><strong>Descripción:</strong> ${data.description}</p>` : ``}
         </div>`;
         
+        // Añadimos la información al html
         $("#plant-list").append(infoPlantas);
+
       });
     }
   });
@@ -25,4 +45,5 @@ function getPlantas() {
 
 $(document).ready(function () {
   getPlantas();
+
 });
