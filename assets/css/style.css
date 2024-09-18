@@ -23,6 +23,7 @@ header {
   text-align: center;
   color: #fff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 /* Logo - Añadimos rotación continua al pasar el cursor */

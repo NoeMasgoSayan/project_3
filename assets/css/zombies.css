@@ -1,0 +1,121 @@
+body {
+  font-family: 'Comic Sans MS', sans-serif;
+  background: rgb(0,255,63);
+  background: linear-gradient(0deg, rgba(0,255,63,1) 13%, rgba(5,170,51,1) 100%);
+  text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+h1 {
+  font-family: 'Kalam', cursive;
+  font-size: 3em;
+  font-weight: 1000;
+  color: #2c221b;
+  text-shadow: 2px 2px 0px #696969;
+  margin: 20px 0;
+  animation: titlePulse 2s infinite;
+  transition: transform 0.3s ease-in-out;
+}
+
+h1:hover {
+  transform: scale(1.1);
+}
+
+@keyframes titlePulse {
+  0% {
+    text-shadow: 2px 2px 0px #696969, 0 0 10px #00ff00, 0 0 20px #00ff00;
+  }
+  50% {
+    text-shadow: 2px 2px 0px #696969, 0 0 20px #00ff00, 0 0 40px #00ff00;
+  }
+  100% {
+    text-shadow: 2px 2px 0px #696969, 0 0 10px #00ff00, 0 0 20px #00ff00;
+  }
+}
+
+#zombies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.zombies-info {
+  background-color: #e3a869; 
+  border: 3px solid #6b3f20; 
+  border-radius: 10px;
+  width: 250px;
+  margin: 15px;
+  padding: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+  text-align: left;
+  animation: zoomIn 0.6s ease-in-out, float 3s ease-in-out infinite;
+  transition: transform 0.3s ease-in-out;
+}
+
+.zombies-info:hover {
+  transform: scale(1.1);
+}
+
+.zombies-info img {
+  display: block;
+  margin: 0 auto 10px;
+  max-width: 90%;
+  border: 2px solid #6b3f20;
+  border-radius: 20px;
+  width: 125px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.zombies-info img:hover {
+  transform: scale(1.1);
+}
+
+.zombies-info h2 {
+  background-color: #926631;
+  color: #f2d784;
+  text-align: center;
+  padding: 5px;
+  margin: 0 0 10px 0;
+  border-radius: 5px;
+}
+
+.zombies-info p {
+  color: #4c3c2e;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.zombies-info strong {
+  color: #d15336;
+}
+
+.zombies-info .description {
+  background-color: #f8c785;
+  padding: 10px;
+  border-radius: 5px;
+  color: #4c3c2e;
+}

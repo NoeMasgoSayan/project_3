@@ -5,22 +5,62 @@ body {
   text-align: center;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 
 h1 {
   font-family: 'Kalam', cursive;
-  font-size: 3em;
-  font-weight: 1000; /* Ajusta el grosor de la letra a bold */
-  color: #2c221b; /* Marrón oscuro */
-  text-shadow: 
-    2px 2px 0px #696969; /* Verde oscuro para la sombra */
+  font-size: 3.5em;
+  font-weight: 1000;
+  color: #2c221b;
+  text-shadow: 2px 2px 0px #696969;
   margin: 20px 0;
+  animation: titlePulse 2s infinite;
+  transition: transform 0.3s ease-in-out;
 }
 
+h1:hover {
+  transform: scale(1.1);
+}
+
+@keyframes titlePulse {
+  0% {
+    text-shadow: 2px 2px 0px #696969, 0 0 10px #00ff00, 0 0 20px #00ff00;
+  }
+  50% {
+    text-shadow: 2px 2px 0px #696969, 0 0 20px #00ff00, 0 0 40px #00ff00;
+  }
+  100% {
+    text-shadow: 2px 2px 0px #696969, 0 0 10px #00ff00, 0 0 20px #00ff00;
+  }
+}
+ 
 #areas-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .areas-info {
@@ -32,18 +72,30 @@ h1 {
   padding: 15px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
   text-align: left;
+  animation: zoomIn 0.6s ease-in-out, float 3s ease-in-out infinite;
+  transition: transform 0.3s ease-in-out;
+}
+
+.areas-info:hover {
+  transform: scale(1.1);
 }
 
 .areas-info img {
   display: block;
   margin: 0 auto 10px;
-  max-width: 80%;
+  max-width: 90%;
   border: 2px solid #6b3f20;
-  border-radius: 5px;
+  border-radius: 50%; /* Hace que el borde sea circular */
+  width: 125px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.areas-info img:hover {
+  transform: scale(1.1);
 }
 
 .areas-info h2 {
-  background-color: #926631; 
+  background-color: #926631;
   color: #f2d784;
   text-align: center;
   padding: 5px;
@@ -58,7 +110,7 @@ h1 {
 }
 
 .areas-info strong {
-  color: #d15336; 
+  color: #d15336;
 }
 
 .areas-info .description {
