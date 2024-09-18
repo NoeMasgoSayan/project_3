@@ -3,19 +3,26 @@ function getPlantas() {
   // Conseguimos el nombre de las plantas
   $.get(`https://pvz-2-api.vercel.app/api/plants/`, function (plantasData) {
 
-    //! Crear un array con todoas las plantas y su info
-    let plantasInfo = [];
-    let familia = []
+    //! Crear arrays
+    let nombre = [];
+    let familia = [];
+    let dureza = [];
+
+    console.log(nombre)
     
     // Conseguimos información de cada planta
     for (let planta of plantasData) {
       $.get(`https://pvz-2-api.vercel.app/api/plants/${planta}`, function (data) {
 
-        // Añadimos la info de cada planta a plantasInfo
-        plantasInfo.push(data);
-        familia.push(data.Family || data.family);
-        //localStorage.setItem("plantasInfo", JSON.stringify(familia));
-        localStorage.setItem("info", JSON.stringify(plantasInfo));
+        //* Añadimos la info al array
+        nombre.push(data.name);
+        familia.push(data.Family || data.family || 'No family');
+        dureza.push(data.Toughness);
+
+        // Guradamos en localStorage
+        localStorage.setItem("nombre", JSON.stringify(nombre));
+        localStorage.setItem("familia", JSON.stringify(familia));
+        localStorage.setItem("dureza", JSON.stringify(dureza));
 
         const infoPlantas = `
         <div class="plant-info">
