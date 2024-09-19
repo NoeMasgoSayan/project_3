@@ -1,0 +1,53 @@
+body {
+  font-family: 'Comic Sans MS', sans-serif;
+  background: rgb(0,255,63);
+  background: linear-gradient(0deg, rgba(0,255,63,1) 13%, rgba(5,170,51,1) 100%);
+  text-align: center;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+background-color: #4caf50;
+text-align: center;
+color: #fff;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+}
+
+header .logo {
+width: 500px;
+height: auto;
+transition: transform 0.6s ease-in-out;
+}
+
+header .logo:hover {
+transform: rotate(180deg);
+}
+
+nav {
+background-color: #90ee90;
+text-align: center;
+padding: 15px 0;
+position: sticky;
+top: 0;
+width: 100%;
+z-index: 1000;
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+margin: 0 20px;
+color: #000;
+font-size: 18px;
+text-decoration: none;
+transition: color 0.3s ease, transform 0.3s ease;
+font-weight: 600;
+}
+
+nav a:hover {
+color: #fff;
+transform: translateY(-5px);
+}

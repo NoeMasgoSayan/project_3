@@ -19,7 +19,7 @@ body {
 /* Encabezado */
 header {
   background-color: #4caf50; /* Verde oscuro original */
-  padding: 20px 0;
+  padding: 8px 0;
   text-align: center;
   color: #fff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);

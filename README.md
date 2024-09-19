@@ -4,7 +4,7 @@
 
 Bienvenido al repositorio del proyecto **"Plantas vs Zombies🌻🧟"**. Este proyecto es una página web dedicada a la popular serie de videojuegos "Plantas vs Zombies 🌻🧟", desarrollada para proporcionar información, recursos y una experiencia interactiva para los fanáticos del juego y usuarios interesados.
 
-![principal]()
+![principal](./assets/img/inicio.png)
 
 ## 📌 Descripción
 
@@ -12,18 +12,20 @@ Bienvenido al repositorio del proyecto **"Plantas vs Zombies🌻🧟"**. Este pr
 
 - 🌻🧟 Información detallada sobre el juego "Plantas vs Zombies".
 - 📱 Videos sobre el juego.
-- 🔗 Links de descarga para cualquier dispositivo.
-
-![plantas]()
-![zombies]()
-![áreas]()
+- 🔗 Links de descarga para cualquier dispositivo.<br>
+#### Página de plantas
+![plantas](./assets/img/plantas.png)
+#### Página de zombies
+![zombies](./assets/img/zombies.png)
+#### Página de áreas
+![áreas](./assets/img/areas.png)
 
 ## 📌 Uso
 
 - Página de inicio: Muestra una visión general del juego, enlaces a otras secciones y videos sobre el juego.
-- **Página de Plantas 🌱:** Muestra información de las plantas del juego.
-- **Página de Zombies 🧟‍♀️:** Muestra información de los zombies del juego.
-- **Página de Áreas🇩🇲 🏞️:** Muestra información de las áreas del juego.
+- **Página de plantas 🌱:** Muestra información de las plantas del juego.
+- **Página de zombies 🧟‍♀️:** Muestra información de los zombies del juego.
+- **Página de áreas 🏞️:** Muestra información de las áreas del juego.
 
 ## 📌 Tecnologías Usadas
 
@@ -34,17 +36,13 @@ Bienvenido al repositorio del proyecto **"Plantas vs Zombies🌻🧟"**. Este pr
 
 ## Diseño de la Interfaz de Usuario
 ### Prototipo de baja fidelidad 🌞
-![baja]()
+![baja](./assets/img/baja1.jpeg)
+![baja](./assets/img/baja2.jpeg)
 ### Prototipo de alta fidelidad 🌞
 ![alta](./assets/img/protoInicio.png)
 
 ## 📌 Créditos
 
 **Desarrollador Principal:** Plan Z 😎<br>
-**Fronend:** Adriana 💻<br>
+**Frontend:** Adriana 💻<br>
 **Backend:** Noelia y Claudia 💻<br>
-
-## 📌 Contacto
-Adriana: <br>
-Claudia: <br>
-Noelia: <br>
