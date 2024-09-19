@@ -19,7 +19,7 @@ function getZombies(){
         velocidad.push(data.speed || 'No calculado');
         dureza.push(data.toughness || data.toughness);
 
-        //* Guardamos en localStorage
+        //* Guardamos nameZombie, velocidad y dureza en localStorage
         localStorage.setItem("nameZombie", JSON.stringify(nameZombie));
         localStorage.setItem("velocidad", JSON.stringify(velocidad));
         localStorage.setItem("dureza", JSON.stringify(dureza));

@@ -1,13 +1,29 @@
-# Plantas vs Zombies Web
+![logo](/assets/img/logo.png)
 
-Bienvenido al repositorio del proyecto "Plantas vs Zombies Web". Este proyecto es una página web dedicada a la popular serie de videojuegos "Plantas vs Zombies", desarrollada para proporcionar información, recursos y una experiencia interactiva para los fanáticos del juego.
+# Plantas vs Zombies Web 🌻🧟
+
+Bienvenido al repositorio del proyecto "Plantas vs Zombies🌻🧟". Este proyecto es una página web dedicada a la popular serie de videojuegos "Plantas vs Zombies 🌻🧟", desarrollada para proporcionar información, recursos y una experiencia interactiva para los fanáticos del juego y usuarios interesados.
+
+![principal]()
 
 ## Descripción
 
 La página web incluye:
 
-- Información detallada sobre el juego "Plantas vs Zombies".
-- Recursos adicionales como mods y descargas.
+- Información detallada sobre el juego "Plantas vs Zombies 🌻🧟".
+- Videos sobre el juego.
+- Links de descarga para cualquier dispositivo.
+
+![plantas]()
+![zombies]()
+![áreas]()
+
+## Uso
+
+- Página de inicio: Muestra una visión general del juego, enlaces a otras secciones y videos sobre el juego.
+- Página de Plantas: Muestra información de las plantas del juego.
+- Página de Zombies: Muestra información de los zombies del juego.
+- Página de Áreas: Muestra información de las áreas del juego.
 
 ## Tecnologías Usadas
 
@@ -16,15 +32,19 @@ La página web incluye:
 - **JavaScript**: Interactividad y funciones dinámicas.
 - **jQuery**: Librería para manipulación del DOM y eventos.
 
-## Uso
-- Página de inicio: Muestra una visión general del juego y enlaces a otras secciones.
-- Guías y Estrategias: Proporciona información útil para mejorar en el juego.
-- Recursos: Descarga mods y otros materiales útiles.
+## Diseño de la Interfaz de Usuario
+### Prototipo de baja fidelidad
+![baja]()
+### Prototipo de alta fidelidad
+![alta](./assets/img/protoInicio.png)
 
 ## Créditos
+
 Desarrollador Principal: Plan Z
-Diseño Gráfico: jajajshjadk
-Recursos: jadnjxns
+Fronend: Adriana
+Backend: Noelia y Claudia
 
 ## Contacto
-Para más información, puedes contactarnos a través de jdsjsdj.
+Adriana:
+Claudia:
+Noelia:
