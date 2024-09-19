@@ -2,30 +2,30 @@
 
 # Plantas vs Zombies Web 🌻🧟
 
-Bienvenido al repositorio del proyecto "Plantas vs Zombies🌻🧟". Este proyecto es una página web dedicada a la popular serie de videojuegos "Plantas vs Zombies 🌻🧟", desarrollada para proporcionar información, recursos y una experiencia interactiva para los fanáticos del juego y usuarios interesados.
+Bienvenido al repositorio del proyecto **"Plantas vs Zombies🌻🧟"**. Este proyecto es una página web dedicada a la popular serie de videojuegos "Plantas vs Zombies 🌻🧟", desarrollada para proporcionar información, recursos y una experiencia interactiva para los fanáticos del juego y usuarios interesados.
 
 ![principal]()
 
-## Descripción
+## 📌 Descripción
 
-La página web incluye:
+### La página web incluye:
 
-- Información detallada sobre el juego "Plantas vs Zombies 🌻🧟".
-- Videos sobre el juego.
-- Links de descarga para cualquier dispositivo.
+- 🌻🧟 Información detallada sobre el juego "Plantas vs Zombies".
+- 📱 Videos sobre el juego.
+- 🔗 Links de descarga para cualquier dispositivo.
 
 ![plantas]()
 ![zombies]()
 ![áreas]()
 
-## Uso
+## 📌 Uso
 
 - Página de inicio: Muestra una visión general del juego, enlaces a otras secciones y videos sobre el juego.
-- Página de Plantas: Muestra información de las plantas del juego.
-- Página de Zombies: Muestra información de los zombies del juego.
-- Página de Áreas: Muestra información de las áreas del juego.
+- **Página de Plantas 🌱:** Muestra información de las plantas del juego.
+- **Página de Zombies 🧟‍♀️:** Muestra información de los zombies del juego.
+- **Página de Áreas🇩🇲 🏞️:** Muestra información de las áreas del juego.
 
-## Tecnologías Usadas
+## 📌 Tecnologías Usadas
 
 - **HTML**: Estructura de la página web.
 - **CSS**: Estilo y diseño de la página.
@@ -33,18 +33,18 @@ La página web incluye:
 - **jQuery**: Librería para manipulación del DOM y eventos.
 
 ## Diseño de la Interfaz de Usuario
-### Prototipo de baja fidelidad
+### Prototipo de baja fidelidad 🌞
 ![baja]()
-### Prototipo de alta fidelidad
+### Prototipo de alta fidelidad 🌞
 ![alta](./assets/img/protoInicio.png)
 
-## Créditos
+## 📌 Créditos
 
-Desarrollador Principal: Plan Z
-Fronend: Adriana
-Backend: Noelia y Claudia
+**Desarrollador Principal:** Plan Z 😎<br>
+**Fronend:** Adriana 💻<br>
+**Backend:** Noelia y Claudia 💻<br>
 
-## Contacto
-Adriana:
-Claudia:
-Noelia:
+## 📌 Contacto
+Adriana: <br>
+Claudia: <br>
+Noelia: <br>
