@@ -1,4 +1,6 @@
-/*let nameArea = JSON.parse(localStorage.getItem('nameArea'));
+Chart.defaults.color = '#fff';
+
+let nameArea = JSON.parse(localStorage.getItem('nameArea'));
 let nombrePlanta = JSON.parse(localStorage.getItem('nombre'));
 let nameZombie = JSON.parse(localStorage.getItem('nameZombie'));
 
@@ -18,9 +20,9 @@ const myChartName = new Chart(ctxName, {
       label: 'Cantidad de Áreas, Plantas y Zombies',
       data: [nameArea.length, nombrePlanta.length, nameZombie.length],
       backgroundColor: [
-        'rgb(255, 99, 132)',
-        'rgb(54, 162, 235)',
-        'rgb(255, 205, 86)'
+        '#be6061',
+        '#FFC107',
+        '#47b057'
       ],
       hoverOffset: 4
     }]
@@ -41,10 +43,10 @@ const contarFamily = {};
 
 //* Contar cada nombre
 newFamily.forEach(name => {
-    if (contarFamily[name]) {
-        contarFamily[name]++;
+    if (contarFamily[name.toUpperCase()]) {
+        contarFamily[name.toUpperCase()]++;
     } else {
-        contarFamily[name] = 1;
+        contarFamily[name.toUpperCase()] = 1;
     }
 });
 
@@ -62,11 +64,11 @@ const myChart = new Chart(ctx, {
   data: {
     labels: uniqueNames,
     datasets: [{
-    label: 'Cuantas plantas pertenecen a la misma familia',
+    label: 'Plantas - Familia',
     data: repetitions,
     fill: false,
-    borderColor: 'rgb(75, 192, 192)',
-    tension: 0.1
+    borderColor: '#76ff03',
+    tension: 0
     }]
   }
 })
@@ -114,23 +116,27 @@ const zombieVelo = new Chart(ctxZV, {
     labels: uniqueV,
     datasets:[
       {
-        label:"Mi Gráfica",
+        label:"Zombies - Velocidad",
         data: repeticionV,
         backgroundColor: [
-          'rgba(54, 162, 235, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(54, 162, 235, 1)',
+          '#ffa500',
+          '#9acd32',
+          '#FFFDD0',
+          '#E27D60',
+          '#ffd700',
+          '#FFC107',
+          '#f7ee92',
+          '#ffff00',
         ],
         borderColor: [
-          'rgba(54, 162, 235, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(54, 162, 235, 1)',
+          '#ffa500',
+          '#9acd32',
+          '#FFFDD0',
+          '#E27D60',
+          '#ffd700',
+          '#FFC107',
+          '#f7ee92',
+          '#ffff00',
         ],
         borderWidth: 1.5
       }
@@ -138,42 +144,11 @@ const zombieVelo = new Chart(ctxZV, {
   }
 });
 
-//TODO: Gráfica de dureza de zombies
-const ctxZD = document.getElementById('myChartZD')
 
-const zombieDure = new Chart(ctxZD, {
-  //* Gráfico de barras
-  type: "bar",
-  data:{
-    labels: uniqueD,
-    datasets:[
-      {
-        label:"Mi Gráfica",
-        data: repeticionD,
-        backgroundColor: [
-          'rgba(54, 162, 235, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(54, 162, 235, 1)',
-        ],
-        borderColor: [
-          'rgba(54, 162, 235, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(54, 162, 235, 1)',
-        ],
-        borderWidth: 1.5
-      }
-    ]
-  }
-});*/
-
-document.addEventListener('DOMContentLoaded', function () {
-  const ctx = document.getElementById('myChart').getContext('2d');
+/* Evento asegura que el código se ejecute solo después de que todo el contenido del documento haya sido cargado */
+//.addEventListener('DOMContentLoaded', function () {
+  /* Obtiene el contexto 2D del elemento <canvas> donde se dibujará el gráfico. */
+  /*const ctx = document.getElementById('myChart').getContext('2d');
   const areas = ['Player´s House', 'Ancient Egypt-Wild West-Pirate Seas-Far Future', 'Big Wave Beach-Lost City-Jurassic Marsh', 'Dark Ages', 'Modern Day', 'Frostbite Caves'];
   const niveles = [5, 25, 32, 20, 34, 30];
 
@@ -199,4 +174,4 @@ document.addEventListener('DOMContentLoaded', function () {
       
       
   });
-});
+});*/

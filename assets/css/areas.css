@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* El ancho y la altura incluyen el padding y el borde */
+}
+
 body {
   font-family: 'Comic Sans MS', sans-serif;
   background: rgb(0,255,63);
@@ -10,21 +16,22 @@ body {
 /* Encabezado */
 header {
   background-color: #4caf50; /* Verde oscuro original */
+  padding: 20px 0px 8px;
   text-align: center;
   color: #fff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  overflow: hidden; /* Oculte cualquier parte del contenido que no quepa dentro del contenedor*/
 }
 
 /* Logo - Añadimos rotación continua al pasar el cursor */
 header .logo {
   width: 500px;
   height: auto;
-  transition: transform 0.6s ease-in-out; /* Transición suave */
+  transition: transform 0.6s ease-in-out; 
 }
 
 header .logo:hover {
-  transform: rotate(360deg); /* Gira 360 grados */
+  transform: rotate(180deg);
 }
 
 /* Navegación */
